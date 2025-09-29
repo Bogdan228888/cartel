@@ -123,3 +123,44 @@ justify-content: center;
 
 
 }
+
+.product-items{
+
+/* Frame 10 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 35px;
+
+
+
+
+
+
+}
+
+.product-item{
+
+
+  /* Frame 7 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 230px;
+height: 332px;
+
+background: #122133;
+border-radius: 10px;
+
+
+
+}
