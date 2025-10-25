@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | GADGETS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">GADGETS</h1>
+  <nav class="nav-items">
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="about.html" class="nav-item">About</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+  </nav>
+</header>
+
+<section class="product-details" id="product-details">
+  <!-- JS завантажить деталі -->
+</section>
+
+<script>
+  const product = JSON.parse(localStorage.getItem("selectedProduct"));
+  const container = document.getElementById("product-details");
+
+  if (product) {
+    container.innerHTML = `
+      <div class="product-detail-card">
+        <img src="${product.image}" alt="${product.name}" class="product-detail-image" />
+        <div class="product-info">
+          <h2>${product.name}</h2>
+          <p>${product.description}</p>
+          <h3>$${product.price}</h3>
+          <form class="buy-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="number" min="1" value="1" required>
+            <input type="text" placeholder="Delivery Address" required>
+            <button type="submit" class="button-shop">Buy Now</button>
+          </form>
+        </div>
+      </div>
+    `;
+  } else {
+    container.innerHTML = `<p>Product not found.</p>`;
+  }
+</script>
+
+</body>
+</html>
