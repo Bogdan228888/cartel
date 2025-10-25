@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GADGETS Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <h1 class="logo">GADGETS</h1>
+    <nav class="nav-items">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="index.html#products" class="nav-item">Shop</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Banner ===== -->
+  <section class="banner">
+    <div class="text-banner">
+      <h2 class="b-t">INNOVATIVE GADGETS</h2>
+      <p class="b-t2">Discover the latest technology</p>
+      <button class="button-shop" onclick="scrollToProducts()">
+        <span class="text-button">SHOP NOW</span>
+      </button>
+    </div>
+    <div class="banner-image">
+      <img src="images/image9.png" alt="Headphones Banner" />
+    </div>
+  </section>
+
+  <!-- ===== Products ===== -->
+  <section id="products" class="products">
+    <h3 class="b-t3">FEATURED PRODUCTS</h3>
+    <div class="product-items" id="product-list">
+      <!-- JS генерує товари тут -->
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>© 2025 GADGETS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
