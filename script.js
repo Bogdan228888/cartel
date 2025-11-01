@@ -21,7 +21,41 @@ const products = [
     image: "watch.png",
     description: "Stylish smartwatch with health tracking, notifications, and long battery life."
   },
-  
+  {
+    id: 4,
+    name: "KeyBoard",
+    price: 399,
+    image: "keyboard.png",
+    description: "The Professional Gaming Mechanical Keyboard."
+  },
+  {
+    id: 5,
+    name: "System unit",
+    price: 1399,
+    image: "pc.png",
+    description: "Premium Style. Optimized Airflow. Easy Build."
+  },
+  {
+    id: 6,
+    name: "Mouse",
+    price: 499,
+    image: "mouse.png",
+    description: "Comfort. Reliability. Simplicity." 
+  },
+  {
+    id: 7,
+    name: "Headphones",
+    price: 499,
+    image: "headphones.png",
+    description: "Immersive Sound. Complete Silence. All Day Comfort." 
+  },
+  {
+    id: 8,
+    name: "Microphone",
+    price: 199,
+    image: "microphone.png",
+    description: "Studio-Quality Sound. Effortless Setup. Perfect for Creators." 
+  }
 ];
 
 // ==== RENDER PRODUCTS ====
